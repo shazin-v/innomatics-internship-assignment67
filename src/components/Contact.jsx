@@ -1,18 +1,36 @@
-import React from 'react';
+import React from "react";
 
 const Contact = () => {
-    return (
-        <div className="content">
-            <h1>Contact Us</h1>
-            <p>Reach out to us for more information.</p>
-            <form>
-                <input type="text" placeholder="Your Name" required />
-                <input type="email" placeholder="Your Email" required />
-                <textarea placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-    );
+  return (
+    <div className="contact-container">
+      <h1 className="contact-title">Contact Us</h1>
+      <p className="contact-description">
+        Reach out to us for more information.
+      </p>
+      <form className="contact-form">
+        <input
+          type="text"
+          className="contact-input"
+          placeholder="Your Name"
+          required
+        />
+        <input
+          type="email"
+          className="contact-input"
+          placeholder="Your Email"
+          required
+        />
+        <textarea
+          className="contact-textarea"
+          placeholder="Your Message"
+          required
+        ></textarea>
+        <button type="submit" className="contact-button">
+          Send Message
+        </button>
+      </form>
+    </div>
+  );
 };
 
 export default Contact;
